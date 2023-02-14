@@ -5,6 +5,17 @@
         80
     ],
 
+    /* Hidden files in file explorer */
+    "files.exclude": {
+        ".coverage": true,
+        ".dccache": true,
+        ".git": true,
+        ".mypy_cache": true,
+        ".venv": true,
+        "dist": true,
+        "poetry.lock": true,
+    },
+
     /* Editor's automatic actions */
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
