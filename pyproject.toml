@@ -32,6 +32,7 @@ cookiecutter_poetry = "cookiecutter_poetry.main:main"
 black = "^23.1.0"
 mypy = "^1.0.0"
 ruff = "^0.0.246"
+coverage = {extras = ["toml"], version = "^7.1.0"}
 
 [tool.black]
 line-length = 79
@@ -63,6 +64,11 @@ show_error_codes = true
 namespace_packages = true
 explicit_package_bases = true
 ignore_missing_imports = true
+
+[tool.coverage.run]
+omit = [
+    "tests/*"
+]
 
 [build-system]
 requires = ["poetry-core"]
