@@ -7,8 +7,3 @@
 - pytest
 - coverage
 - task running
-
-TODO
-- pytest
-- vscode copy
-- error
