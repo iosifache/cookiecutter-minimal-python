@@ -13,6 +13,20 @@ python = "^3.11"
 [tool.poetry.scripts]
 cookiecutter_poetry = "cookiecutter_poetry.main:main"
 
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[tool.black]
+line-length = 79
+preview = true
+include = '\.pyi?$'
+extend-exclude = """
+(
+    ^/.venv/*
+    ^/dist/*
+)
+"""
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
