@@ -27,6 +27,10 @@
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
 
+    /* Linting */
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyPath": "${workspaceFolder}/.venv/bin/mypy",
+
     /* Automatic import sorting */
     "isort.path": [
         "${workspaceFolder}/.venv/bin/isort"
