@@ -1,5 +1,20 @@
 {
+    /* Editor */
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
     "editor.formatOnSave": true,
+
+    /* Formatting */
+    "json.format.keepLines": true,
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+
+    /* Automatic import sorting */
+    "isort.path": [
+        "${workspaceFolder}/.venv/bin/isort"
+    ],
+    "isort.args": [
+        "--src=${workspaceFolder}"
+    ],
 }

@@ -76,6 +76,24 @@ files = [
 ]
 
 [[package]]
+name = "isort"
+version = "5.12.0"
+description = "A Python utility / library to sort Python imports."
+category = "dev"
+optional = false
+python-versions = ">=3.8.0"
+files = [
+    {file = "isort-5.12.0-py3-none-any.whl", hash = "sha256:f84c2818376e66cf843d497486ea8fed8700b340f308f076c6fb1229dff318b6"},
+    {file = "isort-5.12.0.tar.gz", hash = "sha256:8bef7dde241278824a6d83f44a544709b065191b95b6e50894bdc722fcba0504"},
+]
+
+[package.extras]
+colors = ["colorama (>=0.4.3)"]
+pipfile-deprecated-finder = ["pip-shims (>=0.5.2)", "pipreqs", "requirementslib"]
+plugins = ["setuptools"]
+requirements-deprecated-finder = ["pip-api", "pipreqs"]
+
+[[package]]
 name = "mypy-extensions"
 version = "1.0.0"
 description = "Type system extensions for programs checked with the mypy type checker."
@@ -130,4 +148,4 @@ test = ["appdirs (==1.4.4)", "covdefaults (>=2.2.2)", "pytest (>=7.2.1)", "pytes
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "dd90ce43bd2719cbe00f646bdc4bb41f9ced25d562b6f73e773826d203017aaa"
+content-hash = "2fa1b85fa35897017450f965d67b76d0a63374af2c2f23641202012578ff64f9"
