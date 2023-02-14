@@ -1,5 +1,11 @@
 {
-    /* Editor */
+    /* Editor's aspect */
+    "editor.wordWrap": "on",
+    "editor.rulers": [
+        80
+    ],
+
+    /* Editor's automatic actions */
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
     },
