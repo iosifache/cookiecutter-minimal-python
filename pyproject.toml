@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cookiecutter_poetry"
+version = "0.1.0"
+description = ""
+authors = [""]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "cookiecutter_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+cookiecutter_poetry = "cookiecutter_poetry.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
