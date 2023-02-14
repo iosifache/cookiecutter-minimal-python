@@ -15,7 +15,6 @@ cookiecutter_poetry = "cookiecutter_poetry.main:main"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.1.0"
-isort = "^5.12.0"
 mypy = "^1.0.0"
 ruff = "^0.0.246"
 
@@ -29,6 +28,15 @@ extend-exclude = """
     ^/dist/*
 )
 """
+
+[tool.ruff]
+src = ["cookiecutter_poetry", "tests"]
+
+[tool.ruff.isort]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+no_lines_before = ["LOCALFOLDER", "FIRSTPARTY"]
+known_first_party= ["cookiecutter_poetry"]
+known_local_folder = ["cookiecutter_poetry"]
 
 [tool.mypy]
 files = [
