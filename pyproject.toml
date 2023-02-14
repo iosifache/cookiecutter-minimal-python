@@ -2,10 +2,25 @@
 name = "cookiecutter_poetry"
 version = "0.1.0"
 description = ""
+keywords = [""]
 authors = [""]
 license = "MIT"
-readme = "README.md"
+repository = ""
+homepage = ""
+readme = "README.pypi.md"
+classifiers = [
+    ""
+]
+include = [
+    "LICENSE",
+]
 packages = [{include = "cookiecutter_poetry"}]
+
+[tool.poetry.urls]
+"Changelog" = ""
+"Issue Tracker" = ""
+"LinkedIn" = ""
+"Twitter" = ""
 
 [tool.poetry.dependencies]
 python = "^3.11"
