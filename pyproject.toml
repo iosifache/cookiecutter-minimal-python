@@ -17,6 +17,7 @@ cookiecutter_poetry = "cookiecutter_poetry.main:main"
 black = "^23.1.0"
 isort = "^5.12.0"
 mypy = "^1.0.0"
+ruff = "^0.0.246"
 
 [tool.black]
 line-length = 79
