@@ -1,0 +1,9 @@
+# Poetry
+/.venv/
+/dist/
+/poetry.lock
+
+# Python
+**/__pycache__
+/.mypy_cache
+/.coverage
