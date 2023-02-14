@@ -2,6 +2,7 @@
 /.venv/
 /dist/
 /poetry.lock
+/.ruff_cache
 
 # Python
 **/__pycache__
