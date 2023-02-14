@@ -33,6 +33,7 @@ black = "^23.1.0"
 mypy = "^1.0.0"
 ruff = "^0.0.246"
 coverage = {extras = ["toml"], version = "^7.1.0"}
+poethepoet = "^0.18.1"
 
 [tool.black]
 line-length = 79
@@ -69,6 +70,20 @@ ignore_missing_imports = true
 omit = [
     "tests/*"
 ]
+
+[tool.poe.tasks]
+
+    [tool.poe.tasks.test]
+    help = "Run all unit tests."
+    cmd  = "coverage run -m pytest -vv tests/"
+
+    [tool.poe.tasks.coverage]
+    help = "Report the coverage"
+    cmd = "coverage report -m"
+
+    [tool.poe.tasks.covtest]
+    help = "Run the unit tests and report the coverage."
+    sequence = ["test", "coverage"]
 
 [build-system]
 requires = ["poetry-core"]
