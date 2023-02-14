@@ -30,6 +30,17 @@ extend-exclude = """
 )
 """
 
+[tool.mypy]
+files = [
+  "cookiecutter_poetry",
+  "scripts",
+  "tests"
+]
+show_error_codes = true
+namespace_packages = true
+explicit_package_bases = true
+ignore_missing_imports = true
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
