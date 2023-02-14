@@ -24,12 +24,10 @@
     },
     "editor.formatOnSave": true,
 
-    /* Formatting */
+    /* Listing and automatic formatting */
     "json.format.keepLines": true,
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
-
-    /* Linting, formatting, */
     "python.linting.mypyEnabled": true,
     "python.linting.mypyPath": "${workspaceFolder}/.venv/bin/mypy",
     "ruff.path": [ ".venv/bin/ruff" ],

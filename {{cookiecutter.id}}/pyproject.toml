@@ -1,32 +1,36 @@
 [tool.poetry]
-name = "cookiecutter_poetry"
+name = "{{cookiecutter.id}}"
 version = "0.1.0"
-description = ""
-keywords = [""]
-authors = [""]
+description = "{{cookiecutter.description}}"
+keywords = [
+    {% for keywork in cookiecutter.meta.keywords %}"{{keywork}}",{%- if not loop.last %}
+    {% endif %}{% endfor %}
+]
+authors = ["{{cookiecutter.author}}"]
 license = "MIT"
-repository = ""
-homepage = ""
+repository = "{{cookiecutter.repository_url}}"
+homepage = "{{cookiecutter.homepage_url}}"
 readme = "README.pypi.md"
 classifiers = [
-    ""
+    {% for classifier in cookiecutter.meta.classifiers %}"{{classifier}}",{%- if not loop.last %}
+    {% endif %}{% endfor %}
 ]
 include = [
     "LICENSE",
 ]
-packages = [{include = "cookiecutter_poetry"}]
+packages = [{include = "{{cookiecutter.id}}"}]
 
 [tool.poetry.urls]
-"Changelog" = ""
-"Issue Tracker" = ""
-"LinkedIn" = ""
-"Twitter" = ""
+"Changelog" = "{{cookiecutter.changelog_url}}"
+"Issue Tracker" = "{{cookiecutter.issue_tracker_url}}"
+"LinkedIn" = "{{cookiecutter.linkedin_url}}"
+"Twitter" = "{{cookiecutter.twitter_url}}"
 
 [tool.poetry.dependencies]
 python = "^3.11"
 
 [tool.poetry.scripts]
-cookiecutter_poetry = "cookiecutter_poetry.main:main"
+{{cookiecutter.id}} = "{{cookiecutter.id}}.main:main"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.1.0"
@@ -47,7 +51,7 @@ extend-exclude = """
 """
 
 [tool.ruff]
-src = ["cookiecutter_poetry", "tests"]
+src = ["{{cookiecutter.id}}", "tests"]
 select=[
     # Pyflakes
     "F",
@@ -142,15 +146,15 @@ select=[
 line-length = 79
 
 [tool.ruff.isort]
-known-first-party= ["cookiecutter_poetry"]
-known-local-folder = ["cookiecutter_poetry"]
+known-first-party= ["{{cookiecutter.id}}"]
+known-local-folder = ["{{cookiecutter.id}}"]
 
 [tool.ruff.pydocstyle]
 convention = "google"
 
 [tool.mypy]
 files = [
-  "cookiecutter_poetry",
+  "{{cookiecutter.id}}",
   "scripts",
   "tests"
 ]

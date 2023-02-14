@@ -1,0 +1,23 @@
+{
+    "name": "Project's Name",
+    "id": "project",
+    "description": "This is the project's description.",
+    "author": "Author",
+    "year": "2023",
+    "meta": {
+        "keywords": [
+            "python",
+            "cookiecutter"
+        ],
+        "classifiers": [
+            "Environment :: Console",
+            "Operating System :: OS Independent"
+        ]
+    },
+    "homepage_url": "https://project.com",
+    "repository_url": "https://github.com/author/project",
+    "changelog_url": "https://github.com/author/project/CHANGELOG.md",
+    "issue_tracker_url": "https://github.com/author/project/issues",
+    "linkedin_url": "https://linkedin.com/project",
+    "twitter_url": "https://twitter.com/project"
+}
