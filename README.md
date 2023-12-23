@@ -17,7 +17,8 @@ The repository implements a **Cookiecutter template for creating a minimal Pytho
 
 1. [Install Cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/installation.html).
 2. Clone the repository with `git clone https://github.com/iosifache/cookiecutter-minimal-python`.
-3. Fill `cookiecutter.json` with the details of your project.
-4. Generate a new project with `cookiecutter --no-input cookiecutter-minimal-python`.
-5. Check the generated project.
-6. Install project's dependencies with `poetry install`.
+3. Enter the cloned folder.
+4. Fill `cookiecutter.json` with the details of your project.
+5. Generate a new project with `cd .. && cookiecutter --no-input cookiecutter-minimal-python`.
+6. Enter the generated project in the current folder.
+7. Install project's dependencies with `poetry install`.
