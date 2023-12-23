@@ -2,7 +2,7 @@
     "name": "Project's Name",
     "id": "project",
     "description": "This is the project's description.",
-    "author": "Author",
+    "author": "Author <email_address>",
     "year": "2023",
     "meta": {
         "keywords": [
